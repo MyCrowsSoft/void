@@ -14,7 +14,9 @@
 <style></style>
 <script>
 function f0() {
-    document.body.innerHTML = c0();
+    document.onloadeddata = () => {
+        document.body.innerHTML = c0();
+    };
 }
 </script>
 
