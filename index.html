@@ -15,7 +15,16 @@
 <script>
 function f0() {
     document.onload = () => {
-        document.body.innerHTML = c0();
+        document.body.innerHTML = c0(1);
+    };
+    document.onloadstart = () => {
+        document.body.innerHTML = c0(2);
+    };
+    document.onloadedmetadata = () => {
+        document.body.innerHTML = c0(3);
+    };
+    document.ononline = () => {
+        document.body.innerHTML = c0(4);
     };
 }
 </script>
